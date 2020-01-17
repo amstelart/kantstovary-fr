@@ -104,7 +104,13 @@
           <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Новости</a></li>
           <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Название новости</a></li>
         </ul>
-        <h1 class="content__heading">Название новости</h1>
+        <div class="content__heading content__heading--news">
+          <h1>Название новости</h1>
+          <ul class="news-card__info">
+            <li><i class="fas fa-user"></i> Алексей Иванов</li>
+            <li><i class="far fa-clock"></i> 22 марта 2019</li>
+          </ul>
+        </div>
         <h4>Подзаголовок</h4>
         <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
 
@@ -120,13 +126,14 @@
         </div>
         <hr>
 
+        <h3>5 комментариев</h3>
         <form class="comment-form" action="">
           <div class="comment-form__inner">
             <a href="" class="comment-form__avatar-wrap">
               <img src="img/demo-avatar-m.png" alt="Джокер">
             </a>
             <div class="comment-form__body">
-              <label class="field-text">
+              <label class="field-text comment-form__name">
                 <span class="field-text__input-wrap">
                   <input class="field-text__input" type="text" placeholder="Ваше имя" id="" name="">
                 </span>
