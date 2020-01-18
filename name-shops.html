@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body class="drawer drawer--left drawer--sidebar">
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      <header class="page-header drawer-nav" role="banner">
+        <a href="index.html" class="logo">
+          <img src="img/logo-gray.png" alt="">
+        </a>
+        <button type="button" class="drawer-toggle drawer-hamburger">
+          <span class="sr-only">toggle navigation</span>
+          <span class="drawer-hamburger-icon"></span>
+        </button>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#"><i class="icon icon-shop"></i> Все магазины</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"><i class="icon icon-search"></i> Поиск магазина</a>
+          </li>
+          <li class="menu__item menu__item--separator">
+            <a class="menu__link" href="#"><i class="icon icon-map"></i> Карта магазинов</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"><i class="icon icon-star"></i> Избранные магазины</a>
+          </li>
+          <li class="menu__item menu__item--separator">
+            <a class="menu__link" href="#"><i class="icon icon-entrance"></i> Вход для магазинов</a>
+          </li>
+        </ul>
+        <form action="">
+          <label class="field-select">
+            <div class="field-select__name">Ваш город</div>
+            <div class="field-select__select-wrap">
+              <select class="field-select__select" id="" name="">
+                <option>Выберите ород</option>
+                <option>Значение 2</option>
+                <option>Значение 3</option>
+                <option>Значение 10</option>
+              </select>
+            </div>
+          </label>
+          <bytton class="btn btn--main">Выберите город</bytton>
+        </form>
+      </header>
+
+
+      <main role="main" class="drawer-contents">
+        <div class="content-header">
+          <div class="content-header__title">Бесплатная регистрация</div>
+          <a href="#" class="btn btn--main">Регистрация</a>
+        </div>
+        <form action="" class="search">
+          <span class="search__input-wrap">
+            <input class="search__input" type="text" placeholder="Поиск" id="" name="">
+            <button class="search__btn"><i class="icon icon-search-white"></i></button>
+          </span>
+        </form>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+          <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Каталог магазинов</a></li>
+          <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Название магазина</a></li>
+        </ul>
+        <div class="content__heading">
+          <h1>Название магазина</h1>
+        </div>
+        <div class="shop-description">
+          <div class="shop-description__caption">
+            <h5>Описание магазина</h5>
+            <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+          </div>
+          <div class="shop-description__img-wrap">
+            <img src="img/shops-card-img.png" alt="">
+          </div>
+        </div>
+        <div class="image-carousel">
+          <div class="image-carousel__item">
+            <a href="img/joker.jpg" class="thumb"><img src="img/joker.jpg" height="" width="" alt=""></a>
+          </div>
+          <div class="image-carousel__item">
+            <a href="img/joker.jpg" class="thumb"><img src="img/joker.jpg" height="" width="" alt=""></a>
+          </div>
+          <div class="image-carousel__item">
+            <a href="img/joker.jpg" class="thumb"><img src="img/joker.jpg" height="" width="" alt=""></a>
+          </div>
+          <div class="image-carousel__item">
+            <a href="img/joker.jpg" class="thumb"><img src="img/joker.jpg" height="" width="" alt=""></a>
+          </div>
+          <div class="image-carousel__item">
+            <a href="img/joker.jpg" class="thumb"><img src="img/joker.jpg" height="" width="" alt=""></a>
+          </div>
+          <div class="image-carousel__item">
+            <a href="img/joker.jpg" class="thumb"><img src="img/joker.jpg" height="" width="" alt=""></a>
+          </div>
+        </div>
+        <hr>
+        <div class="shop-about">
+          <h4>Об магазине</h4>
+          <div class="shop-about__inner">
+            <div class="shop-about__col">
+              <ul class="shop-about__list">
+                <li><span>Регион</span> Название региона</li>
+                <li><span>Оплата</span> Экваринг</li>
+                <li><span>Доставка</span> Есть, платная</li>
+              </ul>
+            </div>
+            <div class="shop-about__col">
+              <ul class="shop-about__list">
+                <li><span>Город</span> Название города</li>
+                <li>Оффлайн</li>
+                <li><span>Надежность</span> Высокая</li>
+              </ul>
+            </div>
+            <div class="shop-about__col">
+              <ul class="shop-about__list">
+                <li><span>Категория магазина</span> Название категории</li>
+                <li>Розница</li>
+                <li><span>Рейтинг</span>
+                  <ul class="shops-card__rating">
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+
+    </div>
+
+    <footer class="page__footer-wrapper">
+
+      <div class="page-footer" role="contentinfo">
+        <div class="page-footer__inner">
+          <div class="page-footer__logo">
+            <img src="img/logo-white.png" alt="">
+          </div>
+          <nav class="page-footer__nav">
+            <ul>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Написать нам</a></li>
+              <li><a href="#">Сколько стоит</a></li>
+              <li><a href="#">Публичная оферта</a></li>
+              <li><a href="#">Как к нам присоединиться</a></li>
+              <li><a href="#">Что вы получите</a></li>
+            </ul>
+          </nav>
+          <div class="page-footer__social">
+            <p>Поделиться в соц. сетях</p>
+            <ul class="social">
+              <li class="social__link-wrap">
+                <a href="#" class="social__link">
+                  <i class="fab fa-vk"></i>
+                </a>
+              </li>
+              <li class="social__link-wrap">
+                <a href="#" class="social__link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="social__link-wrap">
+                <a href="#" class="social__link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="page-copyright">
+        © 2019, Канцтовары.РФ
+      </p>  
+
+    </footer>
+
+  </div>
+  <!-- <a href="#" class="to-top" id="toTop">↑</a> -->
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
