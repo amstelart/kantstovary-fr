@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body class="drawer drawer--left drawer--sidebar">
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      <header class="page-header drawer-nav" role="banner">
+        <a href="index.html" class="logo">
+          <img src="img/logo-gray.png" alt="">
+        </a>
+        <button type="button" class="drawer-toggle drawer-hamburger">
+          <span class="sr-only">toggle navigation</span>
+          <span class="drawer-hamburger-icon"></span>
+        </button>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#"><i class="icon icon-shop"></i> Все магазины</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"><i class="icon icon-search"></i> Поиск магазина</a>
+          </li>
+          <li class="menu__item menu__item--separator">
+            <a class="menu__link" href="#"><i class="icon icon-map"></i> Карта магазинов</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#"><i class="icon icon-star"></i> Избранные магазины</a>
+          </li>
+          <li class="menu__item menu__item--separator">
+            <a class="menu__link" href="#"><i class="icon icon-entrance"></i> Вход для магазинов</a>
+          </li>
+        </ul>
+        <div class="banner-carousel">
+          <img src="img/joker.jpg" alt="">
+          <img src="img/joker.jpg" alt="">
+          <img src="img/joker.jpg" alt="">
+        </div>
+        <hr>
+        <form action="">
+          <label class="field-select">
+            <div class="field-select__name">Ваш город</div>
+            <div class="field-select__select-wrap">
+              <select class="field-select__select" id="" name="">
+                <option>Выберите ород</option>
+                <option>Значение 2</option>
+                <option>Значение 3</option>
+                <option>Значение 10</option>
+              </select>
+            </div>
+          </label>
+          <div class="field-actions">
+            <bytton class="btn btn--main btn--block">Применить</bytton>
+          </div>
+        </form>
+      </header>
+
+
+      <main role="main" class="drawer-contents">
+        <div class="content-header">
+          <div class="content-header__title">Бесплатная регистрация</div>
+          <a href="#" class="btn btn--main"><i class="fas fa-user"></i> Регистрация</a>
+        </div>
+        <form action="" class="search">
+          <span class="search__input-wrap">
+            <input class="search__input" type="text" placeholder="Поиск" id="" name="">
+            <button class="search__btn"><i class="icon icon-search-white"></i></button>
+          </span>
+        </form>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+          <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Личный кабинет</a></li>
+        </ul>
+        <div class="lk">
+          <div class="content__heading">
+            <label class="field-text field-text--heading">
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" value="Название магазина" type="text" placeholder="Название магазина" id="" name="">
+              </span>
+            </label>
+          </div>
+
+          <div class="shop-description">
+            <div class="shop-description__caption">
+              <label class="field-text">
+                <span class="field-text__input-wrap">
+                  <textarea class="field-text__input" placeholder="Введите текст" rows="10"></textarea>
+                </span>
+              </label>
+            </div>
+            <div class="shop-description__img-wrap">
+              <img src="img/shops-card-img.png" alt="">
+            </div>
+          </div>
+
+          <div style="">
+            <div class="image-carousel">
+              <div class="image-carousel__item">
+                <a href="img/joker.jpg" class="thumb"><img src="img/joker.jpg" height="" width="" alt=""></a>
+              </div>
+              <div class="image-carousel__item">
+                <a href="img/joker.jpg" class="thumb"><img src="img/joker.jpg" height="" width="" alt=""></a>
+              </div>
+              <div class="image-carousel__item">
+                <a href="img/joker.jpg" class="thumb"><img src="img/joker.jpg" height="" width="" alt=""></a>
+              </div>
+              <div class="image-carousel__item">
+                <a href="img/joker.jpg" class="thumb"><img src="img/joker.jpg" height="" width="" alt=""></a>
+              </div>
+              <div class="image-carousel__item">
+                <a href="img/joker.jpg" class="thumb"><img src="img/joker.jpg" height="" width="" alt=""></a>
+              </div>
+              <div class="image-carousel__item">
+                <a href="img/joker.jpg" class="thumb"><img src="img/joker.jpg" height="" width="" alt=""></a>
+              </div>
+            </div>
+            <p>
+              <a href="" class="btn btn--outline-main">
+                Загрузить фото
+              </a>
+            </p>
+            <p>
+              <a href="" class="btn btn--outline-main">
+                Загрузить фото
+              </a>
+            </p>
+            <p>
+              <a href="" class="btn btn--outline-main">
+                Загрузить фото
+              </a>
+            </p>
+            <p>
+              <a href="" class="btn btn--outline-main">
+                Загрузить фото
+              </a>
+            </p>
+          </div>
+
+          <hr>
+          <div class="shop-about">
+            <h4>О магазине</h4>
+            <div class="shop-about__inner">
+              <div class="shop-about__col">
+                <ul class="shop-about__list">
+                  <li><i class="icon icon-marker"></i><span>Регион</span>
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" value="Название региона" type="text" placeholder="Название магазина" id="" name="">
+                      </span>
+                    </label>
+                  </li>
+                  <li><i class="icon icon-payment"></i><span>Оплата</span>
+                    <label class="field-select">
+                      <div class="field-select__select-wrap">
+                        <select class="field-select__select" id="" name="">
+                          <option>Экваринг</option>
+                          <option>Значение 2</option>
+                          <option>Значение 3</option>
+                          <option>Значение 10</option>
+                        </select>
+                      </div>
+                    </label>
+                  </li>
+                  <li><i class="icon icon-delivery"></i><span>Доставка</span>
+                    Есть, платная
+                    <div class="field-checkbox">
+                      <label class="field-checkbox__name">
+                        <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                        <span class="field-checkbox__name-text">Есть</span>
+                      </label>
+                    </div>
+                    <label class="field-select">
+                      <div class="field-select__select-wrap">
+                        <select class="field-select__select" id="" name="">
+                          <option>Бесплатная</option>
+                          <option>Значение 2</option>
+                          <option>Значение 3</option>
+                          <option>Значение 10</option>
+                        </select>
+                      </div>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="shop-about__col">
+                <ul class="shop-about__list">
+                  <li><i class="icon icon-town"></i><span>Город</span>
+                    <label class="field-text">
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" value="Название региона" type="text" placeholder="Название города" id="" name="">
+                      </span>
+                    </label>
+                  </li>
+                  <li><i class="icon icon-status"></i>
+                    <label class="field-select">
+                      <div class="field-select__select-wrap">
+                        <select class="field-select__select" id="" name="">
+                          <option>Оффлайн</option>
+                          <option>Значение 2</option>
+                          <option>Значение 3</option>
+                          <option>Значение 10</option>
+                        </select>
+                      </div>
+                    </label>
+                  </li>
+                  <li><i class="icon icon-shield"></i><span>Надежность</span>
+                    <label class="field-select">
+                      <div class="field-select__select-wrap">
+                        <select class="field-select__select" id="" name="">
+                          <option>Высокая</option>
+                          <option>Значение 2</option>
+                          <option>Значение 3</option>
+                          <option>Значение 10</option>
+                        </select>
+                      </div>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="shop-about__col">
+                <ul class="shop-about__list">
+                  <li><i class="icon icon-category"></i><span>Категория магазина</span> Название категории</li>
+                  <li><i class="icon icon-retail"></i> Розница</li>
+                  <li><i class="icon icon-rating"></i><span>Рейтинг</span>
+                    <ul class="shops-card__rating">
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                      <li><i class="fas fa-star"></i></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tags">Теги магазина <a href="#"><i class="icon icon-toys"></i>Игрушки</a>, <a href="#"><i class="icon icon-stationery"></i>Канцтовары</a>, <a href="#"><i class="icon icon-chemistry"></i>Бытовая химия</a>, <a href="#"><i class="icon icon-furniture"></i>Мебель</a></div>
+          <hr>
+          <div class="contact-shops contact-shops--map">
+            <h4><a href="#">Показать контакты магазина</a></h4>
+            <div class="contact-shops__list">
+              <div class="contact-shops__item">
+                <div class="contact-shops__card">
+                  <ul>
+                    <li><i class="fas fa-phone-alt"></i> +7 (999) 999-99-99</li>
+                    <li><i class="fas fa-phone-alt"></i> +7 (999) 999-99-99</li>
+                    <li><i class="fas fa-envelope"></i> site@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> г.Москва, ул. Московская д.12</li>
+                  </ul>
+                  <div class="card-map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab529c1d15157beaf6791154b7e1629378bfa0180f7151707989fb953de0d16a6&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-shops__item">
+                <div class="contact-shops__card">
+                  <ul>
+                    <li><i class="fas fa-phone-alt"></i> +7 (999) 999-99-99</li>
+                    <li><i class="fas fa-phone-alt"></i> +7 (999) 999-99-99</li>
+                    <li><i class="fas fa-envelope"></i> site@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> г.Москва, ул. Московская д.12</li>
+                  </ul>
+                  <div class="card-map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab529c1d15157beaf6791154b7e1629378bfa0180f7151707989fb953de0d16a6&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="reviews">
+            <h3>Отзывы о магазине</h3>
+            <ul class="reviews__list">
+              <li class="reviews__item">
+                <div class="reviews-card">
+                  <div class="reviews-card__inner">
+                    <div class="reviews-card__header">
+                      <span class="reviews-card__author"><i class="fas fa-user"></i> Александра Иванова</span>
+                      <time class="reviews-card__date" datetime="2017-04-25T05:45"><i class="fas fa-clock"></i> 2 дня назад</time>
+                    </div>
+                    <div class="reviews-card__body">
+                      <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце.</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="reviews__item">
+                <div class="reviews-card">
+                  <div class="reviews-card__inner">
+                    <div class="reviews-card__header">
+                      <span class="reviews-card__author"><i class="fas fa-user"></i> Александра Иванова</span>
+                      <time class="reviews-card__date" datetime="2017-04-25T05:45"><i class="fas fa-clock"></i> 2 дня назад</time>
+                    </div>
+                    <div class="reviews-card__body">
+                      <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце.</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="reviews__item">
+                <div class="reviews-card">
+                  <div class="reviews-card__inner">
+                    <div class="reviews-card__header">
+                      <span class="reviews-card__author"><i class="fas fa-user"></i> Александра Иванова</span>
+                      <time class="reviews-card__date" datetime="2017-04-25T05:45"><i class="fas fa-clock"></i> 2 дня назад</time>
+                    </div>
+                    <div class="reviews-card__body">
+                      <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце.</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="reviews__show-more">
+              <a href="#" class="btn btn--outline-main">Показать еще</a>
+            </div>
+            <form action="" class="reviews__add">
+              <h4>Добавить отзыв</h4>
+              <label class="field-text comment-form__name">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Ваше имя" id="" name="">
+                </span>
+              </label>
+              <label class="field-text">
+                <span class="field-text__input-wrap">
+                  <textarea class="field-text__input" placeholder="Введите текст" rows="6"></textarea>
+                </span>
+              </label>
+              <button class="btn btn--main">Добавить коментарий</button>
+            </form>
+          </div>
+        </div>
+      </main>
+
+    </div>
+
+    <footer class="page__footer-wrapper">
+
+      <div class="page-footer" role="contentinfo">
+        <div class="page-footer__inner">
+          <div class="page-footer__logo">
+            <img src="img/logo-white.png" alt="">
+          </div>
+          <nav class="page-footer__nav">
+            <ul>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Написать нам</a></li>
+              <li><a href="#">Сколько стоит</a></li>
+              <li><a href="#">Публичная оферта</a></li>
+              <li><a href="#">Как к нам присоединиться</a></li>
+              <li><a href="#">Что вы получите</a></li>
+            </ul>
+          </nav>
+          <div class="page-footer__social">
+            <p>Поделиться в соц. сетях</p>
+            <ul class="social">
+              <li class="social__link-wrap">
+                <a href="#" class="social__link">
+                  <i class="fab fa-vk"></i>
+                </a>
+              </li>
+              <li class="social__link-wrap">
+                <a href="#" class="social__link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="social__link-wrap">
+                <a href="#" class="social__link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="page-copyright">
+        © 2019, Канцтовары.РФ
+      </p>  
+
+    </footer>
+
+  </div>
+  <!-- <a href="#" class="to-top" id="toTop">↑</a> -->
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
