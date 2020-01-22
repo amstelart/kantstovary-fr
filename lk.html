@@ -204,7 +204,6 @@
                     </label>
                   </li>
                   <li><i class="icon icon-delivery"></i><span>Доставка</span>
-                    Есть, платная
                     <div class="field-checkbox">
                       <label class="field-checkbox__name">
                         <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
@@ -261,54 +260,73 @@
               </div>
               <div class="shop-about__col">
                 <ul class="shop-about__list">
-                  <li><i class="icon icon-category"></i><span>Категория магазина</span> Название категории</li>
-                  <li><i class="icon icon-retail"></i> Розница</li>
+                  <li><i class="icon icon-category"></i><span>Категория магазина</span>
+                    <label class="field-select">
+                      <div class="field-select__select-wrap">
+                        <select class="field-select__select" id="" name="">
+                          <option>Категория</option>
+                          <option>Значение 2</option>
+                          <option>Значение 3</option>
+                          <option>Значение 10</option>
+                        </select>
+                      </div>
+                    </label>
+                  </li>
+                  <li><i class="icon icon-retail"></i>
+                    <label class="field-select">
+                      <div class="field-select__select-wrap">
+                        <select class="field-select__select" id="" name="">
+                          <option>Розница</option>
+                          <option>Значение 2</option>
+                          <option>Значение 3</option>
+                          <option>Значение 10</option>
+                        </select>
+                      </div>
+                    </label>
+                  </li>
                   <li><i class="icon icon-rating"></i><span>Рейтинг</span>
-                    <ul class="shops-card__rating">
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                      <li><i class="fas fa-star"></i></li>
-                    </ul>
+                    <label class="field-select">
+                      <div class="field-select__select-wrap">
+                        <select class="field-select__select" id="" name="">
+                          <option>&#9733;&#9733;&#9733;&#9733;</option>
+                          <option>&#9733;&#9733;&#9733;</option>
+                          <option>&#9733;&#9733;</option>
+                          <option>&#9733;</option>
+                        </select>
+                      </div>
+                    </label>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="tags">Теги магазина <a href="#"><i class="icon icon-toys"></i>Игрушки</a>, <a href="#"><i class="icon icon-stationery"></i>Канцтовары</a>, <a href="#"><i class="icon icon-chemistry"></i>Бытовая химия</a>, <a href="#"><i class="icon icon-furniture"></i>Мебель</a></div>
-          <hr>
-          <div class="contact-shops contact-shops--map">
-            <h4><a href="#">Показать контакты магазина</a></h4>
-            <div class="contact-shops__list">
-              <div class="contact-shops__item">
-                <div class="contact-shops__card">
-                  <ul>
-                    <li><i class="fas fa-phone-alt"></i> +7 (999) 999-99-99</li>
-                    <li><i class="fas fa-phone-alt"></i> +7 (999) 999-99-99</li>
-                    <li><i class="fas fa-envelope"></i> site@gmail.com</li>
-                    <li><i class="fas fa-map-marker-alt"></i> г.Москва, ул. Московская д.12</li>
-                  </ul>
-                  <div class="card-map">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab529c1d15157beaf6791154b7e1629378bfa0180f7151707989fb953de0d16a6&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
-                  </div>
-                </div>
-              </div>
-              <div class="contact-shops__item">
-                <div class="contact-shops__card">
-                  <ul>
-                    <li><i class="fas fa-phone-alt"></i> +7 (999) 999-99-99</li>
-                    <li><i class="fas fa-phone-alt"></i> +7 (999) 999-99-99</li>
-                    <li><i class="fas fa-envelope"></i> site@gmail.com</li>
-                    <li><i class="fas fa-map-marker-alt"></i> г.Москва, ул. Московская д.12</li>
-                  </ul>
-                  <div class="card-map">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab529c1d15157beaf6791154b7e1629378bfa0180f7151707989fb953de0d16a6&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
-                  </div>
-                </div>
-              </div>
+          <div class="tags">Теги магазина 
+            <div class="field-checkbox field-checkbox--tag">
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                <span class="field-checkbox__name-text"><i class="icon icon-toys"></i>Игрушки</span>
+              </label>
+            </div>,
+            <div class="field-checkbox field-checkbox--tag">
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" id="" name="">
+                <span class="field-checkbox__name-text"><i class="icon icon-stationery"></i>Канцтовары</span>
+              </label>
+            </div>,
+            <div class="field-checkbox field-checkbox--tag">
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" id="" name="">
+                <span class="field-checkbox__name-text"><i class="icon icon-chemistry"></i>Бытовая химия</span>
+              </label>
+            </div>,
+            <div class="field-checkbox field-checkbox--tag">
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" id="" name="">
+                <span class="field-checkbox__name-text"><i class="icon icon-furniture"></i>Мебель</span>
+              </label>
             </div>
           </div>
+
           <hr>
           <div class="reviews">
             <h3>Отзывы о магазине</h3>
