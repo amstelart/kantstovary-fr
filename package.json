@@ -57,7 +57,7 @@
     "husky": "^0.14.3",
     "imagemin-pngquant": "^5.0.0",
     "iscroll": "^5.2.0",
-    "jquery": "^2.2.4",
+    "jquery": "^3.4.1",
     "jquery-drawer": "^3.2.2",
     "jquery-mask-plugin": "^1.14.16",
     "lint-staged": "^5.0.0",
