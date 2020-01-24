@@ -443,6 +443,24 @@
             </div>
             <div class="reviews__add">
               <h4>Добавить отзыв</h4>
+
+              <p>Пожалуйста, оцените магазин</p>
+              <div class="rating-block">
+                <div class="rating edit">
+                  <div class="rating__line"></div>
+                  <div class="rating__activeline"></div>
+                  <input value="3" type="hidden" name="rating" />
+                  <div class="stars">
+                    <span class="star"><i>Ужасно</i></span>
+                    <span class="star"><i>Плохо</i></span>
+                    <span class="star"><i>Нормально</i></span>
+                    <span class="star"><i>Хорошо</i></span>
+                    <span class="star"><i>Отлично</i></span>
+                  </div>
+                </div>
+                <!-- <div class="rating__value">3</div> -->
+              </div>
+              
               <label class="field-text comment-form__name">
                 <span class="field-text__input-wrap">
                   <input class="field-text__input" type="text" placeholder="Ваше имя" id="" name="">
@@ -453,7 +471,7 @@
                   <textarea class="field-text__input" placeholder="Введите текст" rows="6"></textarea>
                 </span>
               </label>
-              <button class="btn btn--main">Добавить коментарий</button>
+              <button class="btn btn--main mw-240">Отправить</button>
             </div>
           </div>
         </form>
