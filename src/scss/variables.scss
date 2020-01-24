@@ -12,7 +12,7 @@ $gray-lighter:                hsl(0, 0%, 80%);
 $gray-lightest:               hsl(0, 0%, 90%);
 $white:                       hsl(0, 0%, 100%);
 
-$color-main:                  hsl(208, 98%, 43%);
+$color-main:                  #0a829e;
 $color-success:               hsl(120, 39%, 54%);
 $color-danger:                hsl(2, 64%, 58%);
 $color-warning:               hsl(35, 84%, 62%);
@@ -28,7 +28,7 @@ $body-bg:                     #fff;
 $link-color:                  $color-main;
 $link-color--hover:           darken($color-main, 15%);
 
-$border-color:                $gray-light;
+$border-color:                #dddddd;
 
 
 
@@ -45,12 +45,12 @@ $font-size--small:            0.75em;
 
 $line-height:                 1.375em;
 
-$font-family:                 -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+$font-family:                 'Montserrat', sans-serif;
 $font-family--serif:          'Georgia', 'Times New Roman', 'Times', serif;
 $font-family--monospace:      'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
 $font-family--headings:       $font-family;
 
-
+$fa-font-path:         "../fonts";
 
 // Ширины
 
@@ -59,11 +59,11 @@ $screen-sm:                   480px;
 $screen-md:                   768px;
 $screen-lg:                   992px;
 $screen-xl:                   1200px;
-$screen-xxl:                  1800px;
+$screen-xxl:                  1440px;
 
 $container-sm:                100%;
 $container-md:                100%;
-$container-lg:                $screen-lg - 30;
+$container-lg:                100%;
 $container-xl:                $screen-xl - 30;
 $container-xxl:               $screen-xxl - 30;
 
@@ -78,10 +78,10 @@ $grid-gutter-width:           30px;
 
 // Разное
 
-$field-padding-vertical:      0.3em;
-$field-padding-horizontal:    0.7em;
+$field-padding-vertical:      0.7em;
+$field-padding-horizontal:    1.4em;
 
-$border-radius:               3px;
+$border-radius:               5px;
 $opacity:                     0.7;
 $transition-time:             0.3s;
 $shadow:                      0 4px 2px -2px rgba(0, 0, 0, 0.3);

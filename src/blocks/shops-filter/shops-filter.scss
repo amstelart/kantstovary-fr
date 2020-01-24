@@ -1,0 +1,50 @@
+// В этом файле должны быть стили для БЭМ-блока shops-filter, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.shops-filter {
+
+  $block-name:                &; // #{$block-name}__element
+
+  border-radius: 5px;
+  background-color: #ffc747;
+  padding: 20px 20px 15px 20px;
+  margin-bottom: 20px;
+
+  &__inner {
+
+  }
+
+  &__row {
+    @include row;
+  }
+
+  &__item {
+    @include col();
+    @include col(lg, 3);
+    @include col(md, 6);
+    margin-bottom: 15px;
+
+    .field-text__input,
+    .field-select__select {
+      padding: 0.5em 0.8em;
+    }
+
+    .btn-group-toggle {
+      
+      @media (min-width: $screen-md) {
+        margin-top: 24px;
+      }
+    }
+  }
+
+  &__action {
+    @include col();
+    margin-bottom: 0;
+
+    .field-actions {
+      margin-bottom: 0;
+    }
+  }
+
+}

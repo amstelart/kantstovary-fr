@@ -1,0 +1,42 @@
+// В этом файле должны быть стили для БЭМ-блока modal-box, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.fancybox-content {
+  border-radius: 5px;
+  padding: 30px 20px 20px 20px;
+
+  @media (min-width: $screen-sm) {
+    padding: 30px 44px 20px 44px;
+  }
+}
+
+.modal-box {
+
+  $block-name:                &; // #{$block-name}__element
+
+  @media (min-width: $screen-sm) {
+    min-width: 400px;
+  }
+
+  &__logo {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  &__title {
+    color: #0a829e;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+
+  &__form {
+    .field-text,
+    .field-checkbox {
+      margin-bottom: 15px;
+    }
+  }
+}

@@ -19,7 +19,7 @@ $border-radius:               3px !default;
   box-sizing: border-box;
   display: inline-block;
   margin: 0;
-  padding: $field-padding-vertical  $field-padding-horizontal;
+  padding: 0.8em 2em;
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
@@ -35,6 +35,7 @@ $border-radius:               3px !default;
   background-color: $gray-lightest;
   background-image: none;
   cursor: pointer;
+  transition: all $transition-time;
 
   &:hover,
   &:focus {
@@ -67,25 +68,85 @@ $border-radius:               3px !default;
   //   vertical-align: middle;
   // }
 
+  &--white {
+    color: #0a829e;
+    background-color: #fff;
+    border: none;
+    font-weight: 500;
 
+    &:hover {
+      color: #0a829e;
+      background-color: darken(#fff, 4%);
+    }
 
-  // &--main {
-  //   color: #fff;
-  //   background-color: $color-main;
-  //   border: 1px solid $color-main;
+    &:focus,
+    &.active {
+      background-color: #0a829e;
+      color: #fff;
+    }
+  }
 
-  //   &:hover,
-  //   &:focus {
-  //     color: #fff;
-  //     background-color: darken($color-main, 10%);
-  //     border-color: darken($color-main, 12%);
-  //   }
+  &--main {
+    color: #fff;
+    background-color: #0a829e;
+    border: 1px solid $color-main;
 
-  //   &--disabled,
-  //   &:disabled {
-  //     color: #fff;
-  //     background-color: $color-main;
-  //     border-color: $color-main;
-  //   }
-  // }
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: darken(#0a829e, 7%);
+      border-color: darken(#0a829e, 10%);
+    }
+
+    &--disabled,
+    &:disabled {
+      color: #fff;
+      background-color: $color-main;
+      border-color: $color-main;
+    }
+  }
+
+  &--outline-main {
+    box-shadow: 0 1px 2px #0a829e;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #0a829e;
+    color: #0a829e;
+
+    &:hover,
+    &:focus {
+      box-shadow: none;
+      background-color: transparent;
+      border: 1px solid #0a829e;
+      color: #0a829e;
+    }
+
+    &--disabled,
+    &:disabled {
+      color: #fff;
+      background-color: $color-main;
+      border-color: $color-main;
+    }
+  }
+
+  &--remove {
+    background-color: #0a829e;
+    border: none;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAAc0lEQVQYlXWPwQmAUAxDP4hOIU4guIl7uIkrOIA3F3EBV/DiXfDypGhBS34hl+SFkgSUwA4MQBLqgQOoPRx5LhYMvIAZKL5BLPxA8+JbL0wRVLBpeQvrF1Swv97UhuwYNToHytFmVMApwFho3GgzoKsD0g03EmhY8y3FDwAAAABJRU5ErkJggg==');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    padding: 5px;
+
+    &:hover,
+    &:focus {
+      background-color: darken(#0a829e, 7%);
+    }
+  }
+
+  &--block {
+    width: 100%;
+  }
 }

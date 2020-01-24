@@ -15,29 +15,64 @@ $border-color:                hsl(0, 0%, 60%) !default;
   padding: 0.3em 0;
   list-style: none;
 
+  padding-top: 40px;
+  margin-top: 20px;
+  border-top: 2px solid #e8e8e8;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #e8e8e8;
+
   &__item {
 
     &--separator {
 
       &:not(:last-child) {
-        padding-bottom: 0.3em;
-        margin-bottom: 0.3em;
-        border-bottom: 1px solid $border-color;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #e8e8e8;
       }
     }
   }
 
   &__link {
-    display: block;
+    display: flex;
+    align-items: center;
     white-space: nowrap;
     width: 100%;
     overflow: hidden;
+    text-transform: uppercase;
     text-overflow: ellipsis;
-    padding: 0.3em 1em;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0.6em 0;
     color: $text-color;
     text-decoration: none;
+    min-height: 45px;
+    transition: all $transition-time;
+
+    .icon {
+      margin-right: 10px;
+    }
 
     &:hover,
-    &:focus {}
+    &:focus {
+      color: #ff2809;
+
+      .icon-shop {
+        @include sprite($icon-shop-hover);
+      }
+      .icon-search {
+        @include sprite($icon-search-hover);
+      }
+      .icon-map {
+        @include sprite($icon-map-hover);
+      }
+      .icon-star {
+        @include sprite($icon-star-hover);
+      }
+      .icon-entrance {
+        @include sprite($icon-entrance-hover);
+      }
+    }
   }
 }

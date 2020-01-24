@@ -1,0 +1,34 @@
+// В этом файле должны быть стили для БЭМ-блока faq, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.faq {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__list {
+    list-style: none;
+    padding: 5px 15px;
+    margin: 0;
+    background: #ffc747;
+    border-radius: 5px;
+
+    li {
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #e9b640;
+      }
+
+      a {
+        text-decoration: none;
+        color: #433006;
+        display: block;
+        padding: 10px 0;
+
+        &:hover {
+          color: #ff2809;
+        }
+      }
+    }
+  }
+}

@@ -20,14 +20,42 @@
   min-width: 320px;
   min-height: 100%;
 
+  &__banner-l-wrap {
+    position: fixed;
+    right: calc(50% + 705px);
+    max-width: calc((100% - 1410px) / 2);
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: right top;
+  }
+
+  &__banner-r-wrap {
+    position: fixed;
+    left: calc(50% + 705px);
+    max-width: calc((100% - 1410px) / 2);
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: left top;
+  }
+
   &__inner {
+    @include container;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 5px 24px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e8e8e8;
+    background-color: #f5f5f5;
   }
 
   &__content {
     flex-grow: 1;
+    position: relative;
+    display: flex;
   }
 
   &__footer-wrapper {
@@ -45,7 +73,7 @@ body {
   // Типографика проекта — в блоке typo
   display: flex;           // Исправляем баг в IE для min-height and flexbox (flex-direction:column)
   flex-direction: column;  // и прижимаем footer в IE 10-11
-  background-color: #fff;
+  background-color: #e5e5e5;
   margin: 0;
   min-height: 100%;
 }
@@ -89,4 +117,56 @@ svg {
 img {
   max-width: 100%;
   height: auto;
+}
+
+a {
+  color: #0a829e;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: lighten(#0a829e, 7%);
+  }
+}
+
+.row-two {
+  @include row;
+
+  .col {
+    @include col();
+    @include col(lg, 6);
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mw-240 {
+  min-width: 240px;
 }

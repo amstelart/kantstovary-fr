@@ -1,0 +1,36 @@
+// В этом файле должны быть стили для БЭМ-блока comment-form, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.comment-form {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__avatar-wrap {
+    flex-shrink: 0;
+    margin-right: 1em;
+    border-radius: 5px;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+    }
+  }
+
+  &__body {
+    flex-grow: 1;
+  }
+
+  &__name {
+    max-width: 270px;
+  }
+
+}

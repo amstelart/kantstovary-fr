@@ -3,34 +3,301 @@
 
 <head>
   <meta charset="utf-8">
-  <title>NTH start project</title>
+  <title>Канцтовары.рф</title>
   <meta name="description" content="">
   @@include('_include/page_head.html')
 </head>
 
-<body>
+<body class="drawer drawer--left drawer--sidebar">
 
+  <div style="position: fixed;z-index:999;left:0;bottom:0;background: #fff;padding: 0.5em; font-size: 14px;">
+    <a data-fancybox data-src="#authorization-modal" href="javascript:;">
+      Авторизация
+    </a>,
+    <a data-fancybox data-src="#call-modal" href="javascript:;">
+      Заказ звонка
+    </a>
+  </div>
+
+  <a class="page__banner-l-wrap" href="#" style="background-image: url(img/bg-l.png);"></a>
   <div class="page__inner">
 
     <div class="page__content">
 
       @@include('blocks/page-header/page-header.html')
 
-      <main role="main">
+      <main role="main" class="drawer-contents">
+        <div class="content-header">
+          <div class="content-header__title">Бесплатная регистрация</div>
+          <a href="#" class="btn btn--main"><i class="fas fa-user"></i> Регистрация</a>
+        </div>
 
-        <h1>NTH start project</h1>
-        
+        <div class="main-slider">
+          <div class="main-slider__wrap">
+            <div class="main-slider__carousel">
+              <div class="slide slide--has-caption slick-slide">
+                <img style="display: block;" src="img/pl-img-01.jpg" alt="">
+                <div class="slide__caption">
+                  <div class="caption-tag">Новость</div>
+                  <div class="caption-date"><i class="far fa-clock"></i> 22 марта 2019</div>
+                  <div>
+                    Книга “Как открыть интернет-магазин. И не
+                    закрыться через месяц” стала
+                    Бестселлером за 7 дней
+                  </div>
+                </div>
+              </div>
+              <div class="slide slide--has-caption slick-slide">
+                <img style="display: block;" src="img/pl-img-01.jpg" alt="">
+                <div class="slide__caption">
+                  <div class="caption-tag">Новость</div>
+                  <div class="caption-date"><i class="far fa-clock"></i> 22 марта 2019</div>
+                  <div>
+                    Книга “Как открыть интернет-магазин. И не
+                    закрыться через месяц” стала
+                    Бестселлером за 7 дней
+                  </div>
+                </div>
+              </div>
+              <div class="slide slide--has-caption slick-slide">
+                <img style="display: block;" src="img/pl-img-01.jpg" alt="">
+                <div class="slide__caption">
+                  <div class="caption-tag">Новость</div>
+                  <div class="caption-date"><i class="far fa-clock"></i> 22 марта 2019</div>
+                  <div>
+                    Книга “Как открыть интернет-магазин. И не
+                    закрыться через месяц” стала
+                    Бестселлером за 7 дней
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-slider__info">
+            <div class="main-slider__info-header">
+              Статистика проекта
+            </div>
+            <div class="main-slider__info-part">
+              <i class="icon front-store"></i>
+              <p>Всего магазинов</p>
+              <p>1475 <sup>+4</sup></p>
+            </div>
+            <div class="main-slider__info-part">
+              <i class="icon customer-review"></i>
+              <p>Отзывов</p>
+              <p>375 <sup>+15</sup></p>
+            </div>
+          </div>
+        </div>
 
-        <p><a href="blocks-demo.html">Страница с демкой компонентов</a></p>
-
+        <form action="" class="search">
+          <span class="search__input-wrap">
+            <input class="search__input" type="text" placeholder="Поиск" id="" name="">
+            <button class="search__btn"><i class="icon icon-search-white"></i></button>
+          </span>
+        </form>
+        <ul class="news-list">
+          <div class="news-list__item news-card">
+            <div class="news-card__header">
+              <ul class="news-card__info">
+                <li><i class="fas fa-user"></i> Алексей Иванов</li>
+                <li><i class="far fa-clock"></i> 22 марта 2019</li>
+              </ul>
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__title">Новость из мира канцтоваров</div>
+              <div class="news-card__rubrik"><span>Рубрика</span> Название рубрики</div>
+              <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+            </div>
+            <div class="news-card__footer">
+              <div class="news-card__links">
+                <div class="tags">Теги <a href="#"><i class="icon icon-toys"></i>Игрушки</a>, <a href="#"><i class="icon icon-stationery"></i>Канцтовары</a>, <a href="#"><i class="icon icon-chemistry"></i>Бытовая химия</a>, <a href="#"><i class="icon icon-furniture"></i>Мебель</a></div>
+                <div class="news-card__link">
+                  <a href="#">https://yandex.ru/news/item-1</a>
+                </div>
+              </div>
+              <div class="news-card__share">
+                <p>Поделиться в соц. сетях</p>
+                <ul class="social">
+                  <li class="social__link-wrap">
+                    <a href="#" class="social__link">
+                      <i class="fab fa-vk"></i>
+                    </a>
+                  </li>
+                  <li class="social__link-wrap">
+                    <a href="#" class="social__link">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="social__link-wrap">
+                    <a href="#" class="social__link">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="news-list__item news-card">
+            <div class="news-card__header">
+              <ul class="news-card__info">
+                <li><i class="fas fa-user"></i> Алексей Иванов</li>
+                <li><i class="far fa-clock"></i> 22 марта 2019</li>
+              </ul>
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__title">Новость из мира канцтоваров</div>
+              <div class="news-card__rubrik"><span>Рубрика</span> Название рубрики</div>
+              <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+            </div>
+            <div class="news-card__footer">
+              <div class="news-card__links">
+                <div class="tags">Теги <a href="#"><i class="icon icon-toys"></i>Игрушки</a>, <a href="#"><i class="icon icon-stationery"></i>Канцтовары</a>, <a href="#"><i class="icon icon-chemistry"></i>Бытовая химия</a>, <a href="#"><i class="icon icon-furniture"></i>Мебель</a></div>
+                <div class="news-card__link">
+                  <a href="#">https://yandex.ru/news/item-1</a>
+                </div>
+              </div>
+              <div class="news-card__share">
+                <p>Поделиться в соц. сетях</p>
+                <ul class="social">
+                  <li class="social__link-wrap">
+                    <a href="#" class="social__link">
+                      <i class="fab fa-vk"></i>
+                    </a>
+                  </li>
+                  <li class="social__link-wrap">
+                    <a href="#" class="social__link">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="social__link-wrap">
+                    <a href="#" class="social__link">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="news-list__item news-card">
+            <div class="news-card__header">
+              <ul class="news-card__info">
+                <li><i class="fas fa-user"></i> Алексей Иванов</li>
+                <li><i class="far fa-clock"></i> 22 марта 2019</li>
+              </ul>
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__title">Новость из мира канцтоваров</div>
+              <div class="news-card__rubrik"><span>Рубрика</span> Название рубрики</div>
+              <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+            </div>
+            <div class="news-card__footer">
+              <div class="news-card__links">
+                <div class="tags">Теги <a href="#"><i class="icon icon-toys"></i>Игрушки</a>, <a href="#"><i class="icon icon-stationery"></i>Канцтовары</a>, <a href="#"><i class="icon icon-chemistry"></i>Бытовая химия</a>, <a href="#"><i class="icon icon-furniture"></i>Мебель</a></div>
+                <div class="news-card__link">
+                  <a href="#">https://yandex.ru/news/item-1</a>
+                </div>
+              </div>
+              <div class="news-card__share">
+                <p>Поделиться в соц. сетях</p>
+                <ul class="social">
+                  <li class="social__link-wrap">
+                    <a href="#" class="social__link">
+                      <i class="fab fa-vk"></i>
+                    </a>
+                  </li>
+                  <li class="social__link-wrap">
+                    <a href="#" class="social__link">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="social__link-wrap">
+                    <a href="#" class="social__link">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </ul>
+        <div class="pagination pagination--center">
+          <a href="" class="pagination__item pagination__item--prev"><i class="fas fa-angle-left"></i> Назад</a>
+          <a href="" class="pagination__item">1</a>
+          <a href="" class="pagination__item pagination__item--active">2</a>
+          <a href="" class="pagination__item">3</a>
+          <span class="pagination__item">...</span>
+          <a href="" class="pagination__item">99</a>
+          <a href="" class="pagination__item pagination__item--next">Вперед <i class="fas fa-angle-right"></i></a>
+        </div>
       </main>
 
     </div>
 
-    <div class="page__footer-wrapper">
+    <footer class="page__footer-wrapper">
       @@include('blocks/page-footer/page-footer.html')
-    </div>
+    </footer>
 
+  </div>
+  <a class="page__banner-r-wrap" href="#" style="background-image: url(img/bg-r.png);"></a>
+
+  <a href="#" class="to-top" id="toTop"><i class="fas fa-angle-up"></i></a>
+
+  <div style="display: none;" id="authorization-modal">
+    <div class="modal-box">
+      <div class="modal-box__logo">
+        <img src="img/logo-white.png" alt="">
+      </div>
+      <div class="modal-box__title">Авторизация</div>
+      <form action="" class="modal-box__form">
+        <label class="field-text">
+          <span class="field-text__input-wrap">
+            <input class="field-text__input" type="text" placeholder="Имя" id="" name="">
+          </span>
+        </label>
+        <label class="field-text">
+          <span class="field-text__input-wrap">
+            <input class="field-text__input phone" type="text" id="" name="">
+          </span>
+        </label>
+        <div class="field-checkbox">
+          <label class="field-checkbox__name">
+            <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+            <span class="field-checkbox__name-text">Запомнить пароль</span>
+          </label>
+        </div>
+        <div class="field-actions">
+          <button class="btn btn--main btn--block">Войти</button>
+          <div class="text-center">
+            <a href="#">Восстановить пароль</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div style="display: none;" id="call-modal">
+    <div class="modal-box">
+      <div class="modal-box__logo">
+        <img src="img/logo-white.png" alt="">
+      </div>
+      <div class="modal-box__title">Заказ звонка</div>
+      <form action="" class="modal-box__form">
+        <label class="field-text">
+          <span class="field-text__input-wrap">
+            <input class="field-text__input" type="text" placeholder="Имя" id="" name="">
+          </span>
+        </label>
+        <label class="field-text">
+          <span class="field-text__input-wrap">
+            <input class="field-text__input phone" type="text" id="" name="">
+          </span>
+        </label>
+        <div class="field-actions">
+          <button class="btn btn--main btn--block">Отправить</button>
+        </div>
+      </form>
+    </div>
   </div>
 
   @@include('_include/page_bottom.html')

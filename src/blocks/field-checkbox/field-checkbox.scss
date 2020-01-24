@@ -63,8 +63,9 @@ $line-height:                 1.375em !default;
       left: 0;
       width: 14px;
       height: 14px;
-      border: 2px solid currentColor;
-      border-radius: $border-radius;
+      border: 1px solid #dddddd;
+      border-radius: 3px;
+      background-color: #fff;
     }
 
     @at-root input:focus ~ &:before {
@@ -79,8 +80,8 @@ $line-height:                 1.375em !default;
       width: 14px;
       height: 6px;
       opacity: 0;
-      border-left: 2px solid currentColor;
-      border-bottom: 2px solid currentColor;
+      border-left: 2px solid #0a829e;
+      border-bottom: 2px solid #0a829e;
       transform: rotate(-45deg);
       transition: opacity $transition-time;
 
@@ -115,5 +116,15 @@ $line-height:                 1.375em !default;
 
   &__help-text {
     @include field-help-text;
+  }
+
+  &--tag {
+    display: inline-block;
+    margin-left: 10px;
+
+    .field-checkbox__name {
+      margin-right: 3px;
+      color: #0a829e;
+    }
   }
 }

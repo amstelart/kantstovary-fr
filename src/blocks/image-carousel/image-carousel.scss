@@ -1,0 +1,12 @@
+// В этом файле должны быть стили для БЭМ-блока image-carousel, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.image-carousel {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__item {
+    padding: 20px 10px;
+  }
+}

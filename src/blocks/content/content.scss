@@ -1,0 +1,39 @@
+// В этом файле должны быть стили для БЭМ-блока content, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.content {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__heading {
+
+    margin-bottom: 30px;
+
+    h1 {
+      font-size: 35px;
+      font-weight: 600;
+      margin: 0;
+    }
+  
+    &--news {
+      display: flex;
+      align-items: flex-end;
+      flex-wrap: wrap;
+  
+      h1 {
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+
+.content-row {
+  @include row
+}
+
+.content-col-6 {
+  @include col();
+  @include col(lg, 6);
+}

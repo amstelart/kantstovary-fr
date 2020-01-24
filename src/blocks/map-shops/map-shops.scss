@@ -1,0 +1,15 @@
+// В этом файле должны быть стили для БЭМ-блока map-shops, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.map-shops {
+
+  $block-name:                &; // #{$block-name}__element
+
+  border-radius: 5px;
+  background-color: rgb(50, 50, 60);
+  box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.1);
+  height: 400px;
+  background-color: #ccc;
+  margin-bottom: 40px;
+}

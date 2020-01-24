@@ -1,0 +1,123 @@
+// В этом файле должны быть стили для БЭМ-блока search, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.search {
+
+  $block-name:                &; // #{$block-name}__element
+
+  margin: 4px 0;
+
+  @media (min-width: $screen-xl) {
+    margin-right: -15px;
+  }
+
+  &__input-wrap {
+    display: block;
+    position: relative;
+  }
+
+  &__input {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 40px;
+    padding: $field-padding-vertical  $field-padding-horizontal;
+    margin: 0;
+    line-height: $line-height;
+    font-size: 1em;
+    font-family: inherit;
+    background-color: #fff;
+    border: 2px solid #0a829e;
+    border-radius: $border-radius;
+    appearance: textfield;
+
+    &:focus {
+      @include field-focus;
+    }
+
+    &[disabled],
+    &[readonly] {
+      cursor: default;
+      background-color: $gray-lighter;
+    }
+
+    &[type='search']::-webkit-search-cancel-button,
+    &[type='search']::-webkit-search-decoration {
+      -webkit-appearance: none; // stylelint-disable-line  property-no-vendor-prefix
+    }
+
+    &[type='number']::-webkit-inner-spin-button,
+    &[type='number']::-webkit-outer-spin-button {
+      // height: auto;
+    }
+
+    &[type='color'] {
+      // max-width: 100px;
+      padding: 0;
+    }
+
+    &::placeholder {
+      color: #797979;
+      opacity: 1;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 47px;
+    bottom: 0;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    padding: 5px 10px;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    text-align: center;
+    font-size: 1em;
+    font-family: inherit;
+    line-height: $line-height;
+    text-decoration: none;
+    text-transform: none;
+    color: $text-color;
+    border: none;
+    background-color: #0a829e;
+    background-image: none;
+    cursor: pointer;
+    transition: all $transition-time;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    .icon {
+      vertical-align: middle;
+    }
+  
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $text-color;
+      background-color: darken(#0a829e, 10%);
+    }
+  
+    &:active,
+    &:focus {
+      @include field-focus;
+    }
+  
+    &--disabled,
+    &:disabled {
+      opacity: $opacity;
+      cursor: not-allowed;
+      color: $text-color;
+      background-color: $gray-lightest;
+      border-color: $gray-lighter;
+  
+      @at-root a.btn--disabled {
+        pointer-events: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+// В этом файле должны быть стили для БЭМ-блока reviews-card, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.reviews-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+
+  &__inner {
+    padding-left: 105px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADsAAAApCAYAAACLO1EjAAAEfUlEQVRogb2aa6gVVRTHf3eyK3mqa0EFvW5UUvQhs0iLLCuQpHcXEm5FMBU9KOiFBZemyEMYFYSBRRkd8kJI6YeoyEpBeveht0j2pLAkLSJsyvBxY9kaPM7eM2fvOXvm9+mctWbvNf/Z7zUzMGXhcwRiELgSmAWkwIvAp6EqLyJN4t2eVrszCbgcmA3sAFakSfxhd7EQYicDEnEMOKrLvgu4CXjWKBEWEXkNcB9wXK7msTSJF2V/oj7CDgCjwHfAUzmhWd1PWuwhGQE2AB2LUOGhVrszvV+x04A1wAvAEYZ3D/sC8wxr/wwDrwMrgWNLapMGubgfsTcCnwHnGR47k6zW6kiX/dLjIQ5mP3xuZIqOv1HDU86aUq87k3W4xJ7l3sp+uIo9DFgFnGJ4yrkf+Lr0CjcOAV4GzvQstyRN4nezPy5iZeC/UTABFLEZuA14qcDvw5HaOid6lPkTWJAm8dJuYy+xEujNHpNAHhF4C/C74fHnUGCt54OW+43TJP4l7yiboIaA1R5Ct2trzg8kdH+9cVehEzps5tmEUtKy++iycoLhsbNV17zVVq8/smQsA6Y7lpQHPZom8UrD4yB2AXChYbXzDzAX+MjqrcYdwBUeQkfSJH7V8OSwdWOZcR80rHZ26X44pNCTgEWGtZgbXIRiETugW7xB40o7clOvWT3VWaJrqgvPpEm8zDVSXux8j7Vsiy7yIZFTy7mO9f0FPGZYS+g+9Uirrvdcz4SNOms+D7xteP34HDjZs8yvWfw0iUt3a91iZcP8inGFHx8Ad1Ycw3P1pvvhY+D2NInfs9XR3Y1vNrz+yBB4X9e7Ac/SIeKfBrzTanfkaGdMvpnhYOACo2g1Ip3Nx3W9dmGo+yjWJ/KQJZEw3mp39oqfib2sZM2tytXAI45lL/JYAVy5ClhsE+s6A/pyF3CpQ5nzDUsYbm21OyN5sXNqCiY8AexnWPdmtmEJGL/V7uyOH+l4GTYuCYfUfW1JbS2PPXgVJG10XSb2+BoDZVxvWPbgc3ysSqNiT9ezqY0m4p/aancOj3TZaYKZBTGGDEs9zIo0kdYExxTEmGpY6mFYxB7QULCiOE097KmRHr6boCjO34alHraJ2E0NBbPmhUrsodkU6bGqCb4oiLHOsNTDukhfJWypOZC03leG9X/WN9C6f8grm0jzSMsNd1jGe9RWd/zlaRLvzPbGsn/daVwShu2a1ypjsV5XBxPZ6ScT+60muurgUeCnHvWK/3HDGoan0yTeQC5TMabjJySfAAsd63tA54+QSCPek9XXLTbVQ/zmQME2an3/Gh4724BLgJ+tXn9+k+xHmsRbbWLRJyFny+/7DCQ95CwV7MOPwNklM7crMizmZN23SKzwjZwS9F2LLxOaS57pME6L+EFPSUu1Pl9kZp+RJrExJHt9LXMGcLemVspyRNIFV+hkVLR5qMIM4F5Nnpe9JdihbyYezn8O5CM24yBN3ch7oKNVuIxF6XYyCck7VMnQ18WBwDna4yTzIcJlqZLeI993rE2TWDYOxQD/AYwr8UjoMPpPAAAAAElFTkSuQmCC');
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+
+  &__header {
+    display: flex;
+  }
+
+  &__author {
+    margin-right: auto;
+
+    .fas {
+      color: #989898;
+    }
+  }
+
+  &__date {
+    color: #989898;
+  }
+
+}

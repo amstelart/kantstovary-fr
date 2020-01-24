@@ -1,0 +1,14 @@
+// В этом файле должны быть стили для БЭМ-блока page-copyright, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.page-copyright {
+
+  $block-name:                &; // #{$block-name}__element
+
+  text-align: center;
+  color: #797979;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 23px;
+}

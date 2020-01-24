@@ -1,0 +1,26 @@
+// В этом файле должны быть стили для БЭМ-блока contacts-panel, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.contacts-panel {
+
+  $block-name:                &; // #{$block-name}__element
+
+  box-shadow: 0 5px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #ffc747;
+  padding: 15px 24px;
+  margin-bottom: 20px;
+  
+  &__list {
+    @include row;
+    list-style: none;
+    padding: 0;
+  }
+
+  &__item {
+    @include col();
+    @include col(lg, 4);
+    margin-bottom: 15px;
+  }
+}

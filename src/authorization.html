@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body class="drawer drawer--left drawer--sidebar">
+
+  <a class="page__banner-l-wrap" href="#" style="background-image: url(img/bg-l.png);"></a>
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main role="main" class="drawer-contents">
+        <div class="content-header">
+          <div class="content-header__title">Бесплатная регистрация</div>
+          <a href="#" class="btn btn--main"><i class="fas fa-user"></i> Регистрация</a>
+        </div>
+        <form action="" class="search">
+          <span class="search__input-wrap">
+            <input class="search__input" type="text" placeholder="Поиск" id="" name="">
+            <button class="search__btn"><i class="icon icon-search-white"></i></button>
+          </span>
+        </form>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+          <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Авторизация</a></li>
+        </ul>
+        <div class="row-two mt-50">
+          <div class="col">
+
+            <form action="" class="user-form mb-30">
+              <div class="user-form__header">
+                <div class="user-form__title">Авторизация</div>
+              </div>
+              <label class="field-text">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Имя пользователя" id="" name="">
+                </span>
+              </label>
+              <label class="field-text">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="password" placeholder="Пароль" id="" name="">
+                </span>
+              </label>
+              <div class="field-checkbox">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" id="" name="">
+                  <span class="field-checkbox__name-text">Запомнить пароль</span>
+                </label>
+              </div>
+              <div class="field-actions">
+                <button class="btn btn--main">Войти</button>
+                <a href="#">Восстановить пароль</a>
+              </div>
+            </form>
+
+            <div class="faq">
+              <h4 class="faq__title">Инструкции</h4>
+              <ul class="faq__list">
+                <li><a href="#">Текст по ссылкой</a></li>
+                <li><a href="#">Вторая строка со сслыкой</a></li>
+                <li><a href="#">Третья строка со ссылкой</a></li>
+                <li><a href="#">Четвертая строка со ссылкой и длинным названием</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <img src="img/joker.jpg" alt="">
+            <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+            <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.</p>
+          </div>
+        </div>
+      </main>
+
+    </div>
+
+    <footer class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </footer>
+
+  </div>
+  <a class="page__banner-r-wrap" href="#" style="background-image: url(img/bg-r.png);"></a>
+
+  <a href="#" class="to-top" id="toTop"><i class="fas fa-angle-up"></i></a>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

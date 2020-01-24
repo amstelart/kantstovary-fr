@@ -1,0 +1,16 @@
+// В этом файле должны быть стили для БЭМ-блока news-list, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.news-list {
+
+  $block-name:                &; // #{$block-name}__element
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    margin-bottom: 12px;
+  }
+}

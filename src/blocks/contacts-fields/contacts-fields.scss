@@ -1,0 +1,46 @@
+// В этом файле должны быть стили для БЭМ-блока contacts-fields, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.contacts-fields {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    @include row;
+  }
+
+  &__col {
+    @include col();
+    @include col(xl, 6);
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .contact-shops__card {
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+
+        .field-text {
+          margin-bottom: 0;
+          flex-grow: 1;
+        }
+
+        .field-text__input {
+          background-color: #e8e8e8;
+          padding: 0.5em 0.8em;
+          font-weight: 500;
+        }
+
+        .btn {
+          flex-shrink: 0;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

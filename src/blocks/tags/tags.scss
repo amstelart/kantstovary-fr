@@ -1,0 +1,19 @@
+// В этом файле должны быть стили для БЭМ-блока tags, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.tags {
+
+  $block-name:                &; // #{$block-name}__element
+
+  margin-bottom: 30px;
+
+  a {
+    display: inline-block;
+    margin-left: 6px;
+
+    .icon {
+      margin-right: 6px;
+    }
+  }
+}

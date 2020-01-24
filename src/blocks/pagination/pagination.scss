@@ -21,31 +21,93 @@ $border-color:                hsl(0, 0%, 60%) !default;
     display: block;
     padding: 0.5em;
     min-width: 2.5em;
-    border: 1px solid $border-color;
+    border: none;
     text-decoration: none;
     text-align: center;
     color: $text-color;
+    margin: 0 5px;
+    line-height: 29px;
+    width: 41px;
+    height: 41px;
+    box-shadow: 0 5px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-weight: 500;
+    transition: all 0.3s;
 
-    & + & {
-      border-left: 0;
+    @media (max-width: ($screen-sm - 1)) {
+      line-height: 21px;
+      width: 21px;
+      height: 31px;
+      font-size: 12px;
     }
 
     &:hover,
     &:focus {
       text-decoration: none;
+      background-color: #f5f5f5;
       color: $text-color;
     }
 
-    @at-root a#{&} {
+    // @at-root a#{&} {
+
+    //   &:hover,
+    //   &:focus {
+    //     background-color: $gray-lightest;
+    //   }
+    // }
+
+    &--active {
+      box-shadow: 0 5px 24px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      background-color: #ff2809;
+      color: #fff;
 
       &:hover,
       &:focus {
-        background-color: $gray-lightest;
+        background-color: #ff2809;
+        color: #fff;
+        opacity: 0.7;
+      }
+
+    }
+
+    &--prev {
+      width: auto;
+      background-color: transparent;
+      box-shadow: none;
+      border: none;
+
+      &:hover {
+        color: #0c9ec0;
+      }
+
+      @media (max-width: ($screen-sm - 1)) {
+        span {
+          display: none;
+        }
       }
     }
 
-    &--active {
-      background-color: $gray-lightest;
+    &--next {
+      width: auto;
+      background-color: transparent;
+      box-shadow: none;
+      border: none;
+
+      &:hover {
+        color: #0c9ec0;
+      }
+
+      @media (max-width: ($screen-sm - 1)) {
+        span {
+          display: none;
+        }
+      }
     }
+  }
+
+  &--center {
+    justify-content: center;
   }
 }

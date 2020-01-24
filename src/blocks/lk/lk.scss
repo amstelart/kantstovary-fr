@@ -1,0 +1,46 @@
+// В этом файле должны быть стили для БЭМ-блока lk, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.lk {
+
+  $block-name:                &; // #{$block-name}__element
+
+  .shop-about__list {
+
+    li {
+      display: flex;
+      align-items: center;
+
+      .icon {
+        top: 11px;
+      }
+
+      > span {
+        margin-right: 15px;
+      }
+
+      .field-select,
+      .field-text {
+        flex-grow: 1;
+      }
+
+      .field-checkbox,
+      .field-select,
+      .field-text {
+        margin-bottom: 0;
+      }
+
+      .field-select__select,
+      .field-text__input {
+        padding: 0.5em 0.8em;
+        font-weight: 500;
+      }
+
+      .field-checkbox__name-text {
+        font-weight: 500;
+        color: #000;
+      }
+    }
+  }
+}
