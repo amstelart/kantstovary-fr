@@ -119,7 +119,7 @@
           <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
           <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Личный кабинет</a></li>
         </ul>
-        <div class="lk">
+        <form action="" class="lk">
           <div class="content__heading">
             <label class="field-text field-text--heading">
               <span class="field-text__input-wrap">
@@ -137,7 +137,15 @@
               </label>
             </div>
             <div class="shop-description__img-wrap">
-              <img src="img/shops-card-img.png" alt="">
+              <div class="field-shop-img">
+                <div class="field-shop-img__inner">
+                  <a href="#" class="btn btn--remove"></a>
+                  <img src="img/shops-card-img.png" alt="">
+                </div>
+                <a href="" class="btn btn--outline-main">
+                  Загрузить фото
+                </a>
+              </div>
             </div>
           </div>
 
@@ -182,6 +190,7 @@
                 Загрузить фото
               </a>
             </p>
+            <small>Максимальный размер файла  5Мб, рекомендуемое разрешение фотографий 1000х1000 пикселей</small>
           </div>
 
           <hr>
@@ -383,6 +392,7 @@
                 </label>
               </div>
             </div>
+            <p><button class="btn btn--main mw-240">Обновить</button></p>
           </div>
           <hr>
           <div class="reviews">
@@ -431,7 +441,7 @@
             <div class="reviews__show-more">
               <a href="#" class="btn btn--outline-main">Показать еще</a>
             </div>
-            <form action="" class="reviews__add">
+            <div class="reviews__add">
               <h4>Добавить отзыв</h4>
               <label class="field-text comment-form__name">
                 <span class="field-text__input-wrap">
@@ -444,9 +454,9 @@
                 </span>
               </label>
               <button class="btn btn--main">Добавить коментарий</button>
-            </form>
+            </div>
           </div>
-        </div>
+        </form>
       </main>
 
     </div>
