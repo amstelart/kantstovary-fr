@@ -60,6 +60,7 @@
     "jquery": "^2.2.4",
     "jquery-drawer": "^3.2.2",
     "jquery-mask-plugin": "^1.14.16",
+    "jquery.collapsable": "^2.0.8",
     "lint-staged": "^5.0.0",
     "merge-stream": "^1.0.1",
     "mkdirp": "^0.5.1",

@@ -116,7 +116,8 @@
     "./node_modules/slick-carousel/slick/slick.min.js",
     "./node_modules/object-fit-images/dist/ofi.js",
     "./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js",
-    "./node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"
+    "./node_modules/jquery-mask-plugin/dist/jquery.mask.min.js",
+    "./node_modules/jquery.collapsable/dist/jquery.collapsable.min.js"
   ],
   "addJsAfter": [
     "./src/js/global-script.js"
