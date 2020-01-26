@@ -8,5 +8,9 @@
 
   &__item {
     padding: 20px 10px;
+
+    .thumb {
+      display: block;
+    }
   }
 }

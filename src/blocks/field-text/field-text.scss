@@ -89,9 +89,13 @@ $border-radius:               3px !default;
 
   &--heading {
     #{$block-name}__input {
-      font-size: 35px;
+      font-size: 24px;
       font-weight: 600;
       padding: 0 10px;
+
+      @media (min-width: $screen-md) {
+        font-size: 35px;
+      }
     }
   }
 }

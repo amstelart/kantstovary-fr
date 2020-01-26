@@ -481,6 +481,7 @@ $drawer-viewport-lg: '(min-width: 75em)' !default;
 .drawer-contents {
   margin-bottom: 45px;
   max-width: 100%;
+  flex-basis: 100%;
 
   @media (min-width: $screen-xl) {
     max-width: calc(100% - 345px);

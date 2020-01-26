@@ -10,16 +10,22 @@
   right: 15px;
   bottom: 1rem;
   z-index: 1;
-  width: 58px;
-  height: 53px;
+  width: 34px;
+  height: 32px;
   border-radius: 5px;
   background-color: #959595;
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
   transition: background-color 0.3s;
 
-  @media (min-width: 1439px) {
-    left: calc(50% + 620px);
+  // @media (min-width: 1439px) {
+  //   left: calc(50% + 620px);
+  // }
+
+  @media (min-width: $screen-md) {
+    width: 58px;
+    height: 53px;
+    font-size: 24px;
   }
 
   .fas {

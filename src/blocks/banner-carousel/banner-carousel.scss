@@ -6,6 +6,10 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  @media (max-width: ($screen-md - 1)) {
+    display: none;
+  }
+
   &__item {
 
     img {

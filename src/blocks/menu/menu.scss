@@ -22,6 +22,15 @@ $border-color:                hsl(0, 0%, 60%) !default;
   margin-bottom: 30px;
   border-bottom: 2px solid #e8e8e8;
 
+  @media (max-width: ($screen-md - 1)) {
+    padding-top: 15px;
+    margin-top: 10px;
+    border-top: 2px solid #e8e8e8;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e8e8e8;
+  }
+
   &__item {
 
     &--separator {
@@ -30,6 +39,11 @@ $border-color:                hsl(0, 0%, 60%) !default;
         padding-bottom: 30px;
         margin-bottom: 30px;
         border-bottom: 2px solid #e8e8e8;
+
+        @media (max-width: ($screen-md - 1)) {
+          padding-bottom: 15px;
+          margin-bottom: 15px;
+        }
       }
     }
   }
@@ -49,6 +63,10 @@ $border-color:                hsl(0, 0%, 60%) !default;
     text-decoration: none;
     min-height: 45px;
     transition: all $transition-time;
+
+    @media (max-width: ($screen-md - 1)) {
+      font-size: 12px;
+    }
 
     .icon {
       margin-right: 10px;
