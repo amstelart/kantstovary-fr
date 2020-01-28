@@ -18,6 +18,7 @@ $z-index-modal:               100 !default;
 
 .js-modal-open {
   overflow: hidden;
+  padding-right: 0 !important;
 }
 
 .modal {
@@ -31,12 +32,13 @@ $z-index-modal:               100 !default;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: $z-index-modal;
+  z-index: 110;
   -webkit-overflow-scrolling: touch;
 
   .js-modal-open & {
     overflow-x: hidden;
     overflow-y: auto;
+    padding-right: 0 !important;
   }
 
   &__dialog {
@@ -63,6 +65,8 @@ $z-index-modal:               100 !default;
     min-height: 100%;
     background-color: #fff;
     outline: 0;
+    padding: 30px;
+    border-radius: 5px;
   }
 
   &__header {

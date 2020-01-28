@@ -55,7 +55,7 @@ $drawer-viewport-lg: '(min-width: 75em)' !default;
 
 .drawer-nav {
   position: fixed;
-  z-index: $drawer-nav-zIndex;
+  z-index: 90;
   top: 0;
   overflow: hidden;
   width: 260px;
