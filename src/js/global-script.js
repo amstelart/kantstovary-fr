@@ -13,8 +13,9 @@ $( document ).ready(function() {
       iscroll: {
         // Configuring the iScroll
         // https://github.com/cubiq/iscroll#configuring-the-iscroll
-        mouseWheel: true,
-        preventDefault: false
+        mouseWheel: false,
+        preventDefault: false,
+        scrollbars: true
       },
       showOverlay: true
     });
