@@ -45,10 +45,10 @@
 <body class="drawer drawer--left drawer--sidebar">
 
   <div style="position: fixed;z-index:999;left:0;bottom:0;background: #fff;padding: 0.5em; font-size: 14px;">
-    <a data-fancybox data-src="#authorization-modal" href="javascript:;">
+    <a data-toggle="modal" href="#authorization-modal">
       Авторизация
     </a>,
-    <a data-fancybox data-src="#call-modal" href="javascript:;">
+    <a data-toggle="modal" href="#call-modal">
       Заказ звонка
     </a>
   </div>
@@ -374,7 +374,74 @@
 
   <a href="#" class="to-top" id="toTop"><i class="fas fa-angle-up"></i></a>
 
-  <div style="display: none;" id="authorization-modal">
+  <div id="authorization-modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal-box">
+          <span class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+          <div class="modal-box__logo">
+            <img src="img/logo-white.png" alt="">
+          </div>
+          <div class="modal-box__title">Авторизация</div>
+          <form action="" class="modal-box__form">
+            <label class="field-text">
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="text" placeholder="Имя" id="" name="">
+              </span>
+            </label>
+            <label class="field-text">
+              <span class="field-text__input-wrap">
+                <input class="field-text__input phone" type="text" id="" name="">
+              </span>
+            </label>
+            <div class="field-checkbox">
+              <label class="field-checkbox__name">
+                <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                <span class="field-checkbox__name-text">Запомнить пароль</span>
+              </label>
+            </div>
+            <div class="field-actions">
+              <button class="btn btn--main btn--block">Войти</button>
+              <div class="text-center">
+                <a href="#">Восстановить пароль</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="call-modal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal__dialog" role="document">
+      <div class="modal__content">
+        <div class="modal-box">
+          <span class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+          <div class="modal-box__logo">
+            <img src="img/logo-white.png" alt="">
+          </div>
+          <div class="modal-box__title">Заказ звонка</div>
+          <form action="" class="modal-box__form">
+            <label class="field-text">
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="text" placeholder="Имя" id="" name="">
+              </span>
+            </label>
+            <label class="field-text">
+              <span class="field-text__input-wrap">
+                <input class="field-text__input phone" type="text" id="" name="">
+              </span>
+            </label>
+            <div class="field-actions">
+              <button class="btn btn--main btn--block">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div style="display: none;" id="authorization-modal">
     <div class="modal-box">
       <div class="modal-box__logo">
         <img src="img/logo-white.png" alt="">
@@ -405,9 +472,9 @@
         </div>
       </form>
     </div>
-  </div>
+  </div> -->
 
-  <div style="display: none;" id="call-modal">
+  <!-- <div style="display: none;" id="call-modal">
     <div class="modal-box">
       <div class="modal-box__logo">
         <img src="img/logo-white.png" alt="">
@@ -429,7 +496,7 @@
         </div>
       </form>
     </div>
-  </div>
+  </div> -->
   <script src="js/script.min.js"></script>
 
 </body>
