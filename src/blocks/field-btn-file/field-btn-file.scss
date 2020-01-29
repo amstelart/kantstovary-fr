@@ -1,0 +1,22 @@
+// В этом файле должны быть стили для БЭМ-блока field-btn-file, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.field-btn-file {
+
+  $block-name:                &; // #{$block-name}__element
+
+  margin-bottom: 15px;
+
+  &__btn {
+  }
+    
+  &__input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+}

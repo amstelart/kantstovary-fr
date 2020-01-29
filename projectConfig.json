@@ -93,7 +93,8 @@
     "banner-carousel": [],
     "modal-box": [],
     "field-shop-img": [],
-    "rating-block": []
+    "rating-block": [],
+    "field-btn-file": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

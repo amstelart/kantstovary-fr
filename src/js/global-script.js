@@ -20,6 +20,11 @@ $( document ).ready(function() {
       showOverlay: true
     });
 
+    $('.field-btn-file__input').change(function() {
+      if ($(this).val() != '') $(this).prev().text('Выбрано файлов: ' + $(this)[0].files.length);
+      else $(this).prev().text('Выберите файлы');
+    });
+
     $('.main-slider__carousel').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
